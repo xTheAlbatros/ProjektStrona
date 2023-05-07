@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DONEJTY</title>
+  <link rel="stylesheet" href="CSS/style.css" type="text/css">
+</head>
+<body>
+<form action="#" method="get">
+  <h3>Formularz dotacji</h3>
+  <fieldset>
+    <label for="charity_choice">Beneficjent:</label>
+    <input list="charity" id="charity_choice" name="charity_choice">
+    <datalist id="charity">
+      <option value="patologiczna rodzina">
+      <option value="imigranci ze wschodu">
+      <option value="bezrobotni">
+      <option value="emeryci i renciści">
+    </datalist>
+    <br>
+    <label for="donate">Wartość dotacji:</label>
+    <input type="number" id="donate" name="donate_cash" min="20" step="5"> zł
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Dane karty płatniczej</legend>
+    Karta:
+    <input type="radio" id="radio1" name="payment" value="visa">
+    <label for="radio1">Visa</label>
+    <input type="radio" id="radio2" name="payment" value="master_card">
+    <label for="radio2">Master Card</label>
+    <br>
+    <label for="cardnum">Numer:</label>
+    <input type="number" id="cardnum" name="card_number" pattern="[0-9]{13,16}" title="numer karty 13-16 cyfr" required>
+    <br>
+    <label for="exp_date">Data ważności</label>
+    <input type="date" id="exp_date" name="expiration_date" title="data wygaśnięcia karty" required>
+    <br>
+    <label for="ccv">Kod CCV:</label>
+    <input type="number" id="ccv" name="card_ccv" pattern="[0-9]{3,4}" title="kod CCV z tyłu karty" required>
+  </fieldset>
+
+  <p>
+    <label for="donator">Darczyńca:</label>
+    <input type="text" id="donator" name="donator" pattern="[A-Za-z]{3,}">
+  </p>
+  <p>
+    <input type="submit" name="submit" value="Rejestruj">
+    <input type="reset" name="cancel" value="Wyczyść">
+  </p>
+</form>
+</body>
+</html>

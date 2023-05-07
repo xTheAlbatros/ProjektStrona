@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularz rejestracyjny</title>
+  <link rel="stylesheet" href="CSS/style.css" type="text/css">
+</head>
+<body>
+<div>
+  <form action="#" method="get">
+    <p>
+      <label for="name">IMIE*:</label><br>
+      <input type="text" id="name" name="name" pattern="[A-Za-z]{} [A-Za-z]{} " required><br>
+
+      <label for="sname">NAZWISKO*:</label><br>
+      <input type="text" id="sname" name="surname" pattern="[A-Za-z]{}+-[A-Za-z]{}" required><br>
+
+      <label for="mail">EMAIL*:</label><br>
+      <input type="email" id="mail" name="email"  placeholder="sample@mail.com" required><br>
+
+      <label for="tel">NUMER TELEFONU:</label><br>
+      <input type="tel" id="tel" name="tel" pattern="^\d{9}$" required><br>
+
+      <label for="date">DATA URODZENIA:</label><br>
+      <input type="date" id="date" name="date"><br>
+
+      <label for="passwd">HASŁO*:</label><br>
+      <input type="password" id="passwd" name="password" required>
+    </p>
+    <p>
+      <input type="radio" name="status" id="radio1" value="uczen">
+      <label for="radio1"> - uczeń</label><br>
+
+      <input type="radio" name="status" id="radio2" value="student">
+      <label for="radio2"> - student</label><br>
+
+      <input type="radio" name="status" id="radio3" value="pracowink">
+      <label for="radio3"> - pracownik</label>
+    </p>
+    <p>
+      <label for="hobby">ZAINTERESOWANIA:</label>
+      <select id="hobby" name="hobby" multiple size="3">
+        <option value="sport">SPORT</option>
+        <option value="music">MUZYKA</option>
+        <option value="film">FILM</option>
+        <option value="moto">MOTORYZACJA</option>
+        <option value="dance">TANIEC</option>
+        <option value="travel">PODRÓŻE</option>
+      </select>
+    </p>
+    <p>
+      <input id="terms" type="checkbox" name="accept" required>
+      <label for="terms">*Akceptuję regulamin.</label>
+    </p>
+    <p>
+      <input class="button" type="submit" value="Prześlij">
+      <input class="button" type="reset" value="Anuluj">
+    </p>
+  </form>
+</div>
+</body>
+</html>

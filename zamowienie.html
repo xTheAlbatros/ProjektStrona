@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kreator pizzy</title>
+  <link rel="stylesheet" href="CSS/style.css" type="text/css">
+</head>
+<body>
+<div>
+<form action="mailto:beatap@cs.pollub.pl" method="post">
+  <div id="baner"> <h1>Kreator pizzy</h1> </div>
+  <div id="rozmiar">
+   <fieldset>
+     <legend>Rozmiar:</legend>
+     <input type="radio" id="Mała" name="przegladarka" value="m" />
+     <label for="Mała">Mała</label>
+     <input type="radio" id="Średnia" name="przegladarka" value="s" />
+     <label for="Średnia">Średnia</label>
+     <input type="radio" id="Duża" name="przegladarka" value="d" />
+     <label for="Duża">Duża</label> <br />
+   </fieldset>
+  </div>
+  <div id="Dodatki">
+   <fieldset>
+     <legend>Dodatki:</legend>
+     <input type="checkbox" id="Szynka" name="przegladarka" value="Szynka" /> <label for="Szynka">Szynka</label><br />
+     <input type="checkbox" id="Salami" name="przegladarka" value="Salami" /> <label for="Salami">Salami</label><br />
+     <input type="checkbox" id="Boczek" name="przegladarka" value="Boczek" /> <label for="Boczek">Boczek</label><br />
+     <input type="checkbox" id="Papryka" name="przegladarka" value="Papryka" /> <label for="Papryka">Papryka</label><br />
+     <input type="checkbox" id="Pomidor" name="przegladarka" value="Pomidor" /> <label for="Pomidor">Pomidor</label><br />
+     <input type="checkbox" id="Ser" name="przegladarka" value="Ser" /> <label for="Ser">Ser</label><br />
+   </fieldset>
+  </div>
+  <div id="Sosy">
+    <fieldset>
+      <legend>Sosy:</legend>
+      <label for="Wybierz sos">Wybierz sos:</label>
+      <select id="Wybierz sos" size="4" name="sos" multiple="multiple">
+        <option value="Pomidorowy">Pomidorowy</option>
+        <option value="Czosnkowy">Czosnkowy</option>
+        <option value="Ketchup l">Ketchup łagodny</option>
+        <option value="Ketchup p">Ketchup pikatny</option>
+      </select><br />
+      <label for="Inne uwagi">Inne uwagi:</label>
+      <textarea id="Inne uwagi" cols="70" rows="5" name="uwagi">
+      </textarea><br />
+    </fieldset>
+  </div>
+  <div id="przyciski">
+    <br />
+    <input type="reset" value="Wyczyść dane" />
+    <input type="submit" value="Wyślij zamówienie" />
+  </div>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body {
+    background: #ebbc90;
+}
+*.srodek{text-align: center}
+nav{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+nav a {
+    border: lightgoldenrodyellow 1px solid;
+    border-radius: 10px;
+    background: #58432e;
+    float: left;
+    display: block;
+    font-size: 160%;
+    padding: 1%;
+    width: 22.825%;
+    text-align: center;
+    color: lightyellow;
+}
+nav a:hover {
+    background: #8a7351;
+    border-radius: 10px;
+}
+section{
+    margin: 1%;
+    clear:both;
+}
+footer {
+    color: lightyellow;
+    background: #58432e;
+    border-radius: 10px;
+}
+h1, h2, footer {
+    padding: 0.2em;
+    text-align: center;
+    clear: both;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+*.galery{
+    margin: auto;
+    width: 90%;
+}
+*.slide:hover {
+    background: #82866e;
+}
+*.slide {
+    float: left;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    background: #fbffdb;
+    width: 13%;
+    padding: 0.5% 1%;
+    margin: 1%;
+}
+@media screen and (min-width: 720px){
+    nav a {
+        height: 50px;
+        width: 22.7%;
+    }
+}
+@media screen and (max-width: 720px) {
+    nav a {
+        padding: 10px 0;
+        font-size: 140%;
+    }
+    *.slide {
+        width: 45%;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 720px) {
+    nav a {
+        width: 49.5%;
+    }
+    body{
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 481px) {
+    nav a {
+        width: 97%;
+        padding: 5px;
+    }
+    *.slide{
+        margin-left: 25%;
+        width: 50%;
+        margin-top: 5px;
+        padding: 0.5% 2%;
+    }
+}
