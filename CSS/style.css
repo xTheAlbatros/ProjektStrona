@@ -8,6 +8,10 @@ header h2{
     /*    animation: animate 0.5s infinite;*/
 }
 
+.czerwone{
+    color: red;
+}
+
 @keyframes animate {
     0%{color: red;}
     50%{color: green;}
